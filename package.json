@@ -4,9 +4,7 @@
   "private": true,
   "type": "module",
 "scripts": {
-  "deploy": "npm install --force && npm run build",
-  "prebuild": "npx chmod +x ./node_modules/.bin/vite || true",
-  "build": "npx vite build",
+  "build": "node ./node_modules/vite/bin/vite.js build",
   "dev": "vite",
   "preview": "vite preview",
   "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
